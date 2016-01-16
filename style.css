@@ -1,8 +1,17 @@
 .racer_table td {
   background-color: white;
-  border: 2px solid red;
   height: 20px;
   width: 20px;
+}
+
+
+
+.racer_table #redLobster_strip td {
+  border: 2px solid red;
+}
+
+.racer_table #blueLobster_strip td {
+  border: 2px solid blue;
 }
 
 .racer_table td.active {
