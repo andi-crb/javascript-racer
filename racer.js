@@ -4,6 +4,7 @@ $('document').ready(function() {
 
 //define lobster object and raceOver variable
 
+// nice use of a data variable rather than hardcoding
 var allTheLobsters = {redLobster : "Red Space Lobster", blueLobster : "Blue Space Lobster"};
 var raceOver = false;
 
@@ -24,6 +25,8 @@ function advance(whichLobster){
 var current = $("#"+whichLobster+"_strip td.active");
 var next = current.next();
 current.toggleClass("active");
+
+// could pulll this out into a checkVictory function that is called after advance
 if (!next.length && raceOver == false) {
   victoryToTheLobsterGods(whichLobster);
 } else {
